@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+
+.logo{
+    background: none;
+    width: 7.5vw;
+    height: 5vw;
+    margin-left: 3vw;
+}
+
+
+.header{
+    display: flex;
+    position: fixed; 
+    z-index: 1000; 
+    /* transition: background-color 0.3s; */
+}
+
+.header.scrolled {
+    background-color: black; /* Solid background after scrolling */
+}
+
+
+.header a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: rgb(223, 216, 216);
+    text-decoration: none;
+    padding: 0.8vw;
+    font-size: 1.1vw;
+    margin-top: 1.3vw;
+    margin-bottom: 1.3vw;
+}
+
+.header a:hover{
+    color: rgba(223, 216, 216, 0.731);
+    transition-duration: 0.9s;
+}
+
+.header .home{
+    margin-left: 2vw;
+}
+
+.pfp{
+    width: 2.7vw;
+    height: 2.7vw;
+    margin-left: 35vw;
+    margin-top: 1.3vw;
+    border-radius: 0.3vw;
+}
+
+
+.triangle{
+    background-image: url('images/triangle_down.png');
+    background-size: cover;
+    width: 0.7vw;
+    height: 0.7vw;
+    margin-left: 0.8vw;
+    margin-top: 2.3vw;
+    margin-right: 4vw;
+}
+
+.triangle:hover{
+    background-image: url('images/triangle_up.png');
+    background-size: cover;
+    width: 0.7vw;
+    height: 0.7vw;
+    margin-left: 0.8vw;
+    margin-top: 2.3vw;
+}
+
+.friends img{
+    display: block;
+    width: 98.72vw;
+    height: 47vw;
+}
+
+.friends .playBtn{
+    margin-top: -15vw;
+    margin-left: 3vw;
+    width: 8.5vw;
+    height: 3.3vw;
+    border-radius: 0.3vw;
+}
+
+.friends .playBtn:hover{
+    opacity: 0.7;
+}
+
+.friends .tvScifi{
+    margin-top: 7vw;
+    margin-bottom: 2vw;
+    margin-left: 3vw;
+}
+
+.friends .tvScifi .tvScifiText{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1.4vw;
+    color: white;
+    margin-bottom: 0.5vw;
+}
+
+.friends .tvScifi .swiper .swiper-wrapper {
+    display: flex;
+}
+
+.friends .tvScifi .swiper .swiper-wrapper .swiper-slide {
+    flex: 0 0 auto;
+    width: 18vw; /* Adjust width as needed */
+    height: 10vw; /* Adjust height as needed */
+}
+
+
+.friends .tvScifi .swiper .swiper-wrapper .swiper-slide .slideLink .slideImg{
+    width: 17vw;
+    height: 10vw;
+    border-radius: 0.3vw;
+}
+
+.friends .tvScifi .swiper .swiper-button-prev, 
+.friends .tvScifi .swiper .swiper-button-next{
+    height: 10vw;
+    width: 2.5vw;
+    bottom: 0;
+    top: 0;
+    margin: 0;
+    background-color: rgba(20,20,20,0.5);
+    color: white;
+    opacity: 0;
+}
+
+.friends .tvScifi .swiper:hover .swiper-button-prev, 
+.friends .tvScifi .swiper:hover .swiper-button-next{
+    opacity: 1;
+    font-size: 0.5vw;
+}
+
+.friends .tvScifi .swiper .swiper-button-prev:hover, 
+.friends .tvScifi .swiper .swiper-button-next:hover{
+    transform: scale(1.25);
+}
+
+.friends .tvScifi .swiper .swiper-button-prev{
+    left: 0;
+    border-top-right-radius: 0.3vw;
+    border-bottom-right-radius: 0.3vw;
+}
+
+.friends .tvScifi .swiper .swiper-button-next{
+    right: 0;
+    border-top-left-radius: 0.3vw;
+    border-bottom-left-radius: 0.3vw;
+}
+
+.manifestZoom{
+    background-color: rgb(223, 216, 216);
+    width: 28vw;
+    height: 25vw;
+    margin-bottom: 2vw;
+    border-radius: 0.3vw;
+}
+
+.manifestZoom img{
+    width: 28vw;
+    height: 20vw;
+}
+
+.manifestZoom p{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
