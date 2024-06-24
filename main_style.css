@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(20, 20, 20);
 }
 
 
@@ -25,7 +25,8 @@ body{
 }
 
 .header.scrolled {
-    background-color: black; /* Solid background after scrolling */
+    background-color: rgb(20, 20, 20); /* Solid background after scrolling */
+    opacity: 1;
 }
 
 
@@ -95,13 +96,13 @@ body{
     opacity: 0.7;
 }
 
-.friends .tvScifi{
+.section{
     margin-top: 7vw;
     margin-bottom: 2vw;
     margin-left: 3vw;
 }
 
-.friends .tvScifi .tvScifiText{
+.section-text{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     font-size: 1.4vw;
@@ -109,25 +110,25 @@ body{
     margin-bottom: 0.5vw;
 }
 
-.friends .tvScifi .swiper .swiper-wrapper {
+.swiper-wrapper {
     display: flex;
 }
 
-.friends .tvScifi .swiper .swiper-wrapper .swiper-slide {
+.friends .section .swiper .swiper-wrapper .swiper-slide {
     flex: 0 0 auto;
     width: 18vw; /* Adjust width as needed */
     height: 10vw; /* Adjust height as needed */
 }
 
 
-.friends .tvScifi .swiper .swiper-wrapper .swiper-slide .slideLink .slideImg{
+.friends .section .swiper .swiper-wrapper .swiper-slide .slideLink .slideImg{
     width: 17vw;
     height: 10vw;
     border-radius: 0.3vw;
 }
 
-.friends .tvScifi .swiper .swiper-button-prev, 
-.friends .tvScifi .swiper .swiper-button-next{
+.friends .section .swiper .swiper-button-prev, 
+.friends .section .swiper .swiper-button-next{
     height: 10vw;
     width: 2.5vw;
     bottom: 0;
@@ -138,44 +139,79 @@ body{
     opacity: 0;
 }
 
-.friends .tvScifi .swiper:hover .swiper-button-prev, 
-.friends .tvScifi .swiper:hover .swiper-button-next{
+.friends .section .swiper:hover .swiper-button-prev, 
+.friends .section .swiper:hover .swiper-button-next{
     opacity: 1;
     font-size: 0.5vw;
 }
 
-.friends .tvScifi .swiper .swiper-button-prev:hover, 
-.friends .tvScifi .swiper .swiper-button-next:hover{
+.friends .section .swiper .swiper-button-prev:hover, 
+.friends .section .swiper .swiper-button-next:hover{
     transform: scale(1.25);
 }
 
-.friends .tvScifi .swiper .swiper-button-prev{
+.friends .section .swiper .swiper-button-prev{
     left: 0;
     border-top-right-radius: 0.3vw;
     border-bottom-right-radius: 0.3vw;
 }
 
-.friends .tvScifi .swiper .swiper-button-next{
+.friends .section .swiper .swiper-button-next{
     right: 0;
     border-top-left-radius: 0.3vw;
     border-bottom-left-radius: 0.3vw;
 }
 
-.manifestZoom{
-    background-color: rgb(223, 216, 216);
-    width: 28vw;
-    height: 25vw;
+.section-others{
+    margin-top: 3.5vw;
     margin-bottom: 2vw;
+    margin-left: 3vw;
+}
+
+.section-others .swiper .swiper-wrapper .swiper-slide {
+    flex: 0 0 auto;
+    width: 18vw; /* Adjust width as needed */
+    height: 10vw; /* Adjust height as needed */
+}
+
+
+.section-others .swiper .swiper-wrapper .swiper-slide .slideLink .slideImg{
+    width: 17vw;
+    height: 10vw;
     border-radius: 0.3vw;
 }
 
-.manifestZoom img{
-    width: 28vw;
-    height: 20vw;
-}
-
-.manifestZoom p{
+.section-others .swiper .swiper-button-prev, 
+.section-others .swiper .swiper-button-next{
+    height: 10vw;
+    width: 2.5vw;
+    bottom: 0;
+    top: 0;
+    margin: 0;
+    background-color: rgba(20,20,20,0.5);
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0;
 }
 
+.section-others .swiper:hover .swiper-button-prev, 
+.section-others .swiper:hover .swiper-button-next{
+    opacity: 1;
+    font-size: 0.5vw;
+}
+
+.section-others .swiper .swiper-button-prev:hover, 
+.section-others .swiper .swiper-button-next:hover{
+    transform: scale(1.25);
+}
+
+.section-others .swiper .swiper-button-prev{
+    left: 0;
+    border-top-right-radius: 0.3vw;
+    border-bottom-right-radius: 0.3vw;
+}
+
+.section-others .swiper .swiper-button-next{
+    right: 0;
+    border-top-left-radius: 0.3vw;
+    border-bottom-left-radius: 0.3vw;
+}
