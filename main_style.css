@@ -230,6 +230,10 @@ body{
     margin-left: 9vw;
 }
 
+.social-logo a{
+    text-decoration: none;
+}
+
 .list{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(110, 109, 109);
